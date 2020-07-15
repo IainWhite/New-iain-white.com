@@ -1,0 +1,469 @@
+Book List
+
+Home Page
+Currently reading <title> by <author>.
+Recently finished reading <title> by <author>.
+
+Data Fields
+ISBN
+title
+author (multiple) (first name, surname)
+audio
+read
+own
+reading
+cover
+description
+tags
+description
+date (month year optional)
+
+Library Page
+Title as link to Book page.
+/library
+
+Currently reading <title> by <author>.
+Recently finished reading <title> by <author>.
+
+Books
+Table paged by 10. Only Read. initial order by created date, sortable by title, author surname
+<title> by <author> 
+Link to all books for SEO.
+
+Book Page
+/librar/<title>
+H1 <title>
+H2 <author> link to Author Page
+<cover image>
+<description>
+<ISBN>
+
+Author Page
+Table paged by 10
+/librar/<author>
+Sorted by <title>
+
+Additional
+Filter by <tag>
+Buy on Amazon etc
+
+
+===
+Skill
+
+Data Fields
+title (name)
+isContinual
+isSoft
+isManager
+isPM
+first_used
+lasted_used
+proficiency (Basic, Intermediate, Proficent, Advanced)
+description
+logo
+
+Skills Page
+Table paged by 10. Order by <proficiency>
+<title> links to Skill Page
+/skills
+<title> | <lasted_used> (current) | <proficiency> as stars.
+Link to all skills for SEO.
+
+Skill Page
+/skills/<title>
+H1 <title>
+Iain White has <proficiency> proficient using <title>, with <years> experience.
+<logo image>
+<description>
+Iain White used <title> when he worked as <companies>.
+
+===
+Employment
+/employment
+Table
+<title> (type) at <company_name> (isUK) <start_date> - <end-date> (<years>, <months>)
+<short_description>
+<primary_skills>
+[More]
+
+Employment Page
+/employment/<company_name>
+H1 <title> at <company_name>
+Iain White worked as <title> at <company_name> for <years>, <months> from <start_date> to <end-date>.
+<company_name> website: <company_url>.
+<company_name> on Wikipedia: <company_wikipedia_url>.
+If isUK This position was in <country>.
+This position was / is <type>.
+<company_logo>
+<description>
+<primary_skills> as links
+<other_skills> as links
+
+Position
+
+Data Fields
+title (position name)
+description
+short_description
+company_logo
+company_name
+company_url
+company_wikipedia_url
+country (isUK)
+start_date
+end_date
+type (permanent, contract, freelance)
+primary_skills
+other_skills
+
+===
+
+Work Examples
+Linked to Position
+
+Data Fields
+title
+site_image
+description
+url
+position
+
+Work Examples Page
+/work_examples
+Examples of work by Iain White.
+Gallery
+
+/work_examples/company_name
+Examples of work at <company_name> by Iain White.
+Gallery
+
+===
+Education
+
+Education Page
+/education
+Iain White has a Bachelor Of Science (BSc) degree and diplomas in computing.
+He is a Professional Scrum Master and a Competent Toastmaster (CTM).
+Iain has completed <count> training courses in management and development skills.
+View Iain's Scrum Master certificate.
+
+Table
+<title> | <institution> | <start-date> - <end-date>
+Professional Scrum Master I | Scrum.org | 2013
+CTM (Communications and Leadership) | Toastmasters International | 2003
+BSc (Computing) | Open University | 1994 - 96
+Diploma in Computing | Open University | 1996
+Programming in C | Brunel Technical College | 1988
+5 SCOTVEC Modules in Computing | Perth College | 1986 - 87
+HND in Mechanical / Production Engineering | Napier University | 1983 - 86
+OND in Engineering | Perth College 1981 - 83
+
+h2 Recent Training
+Table newest 10
+<title> | <institution_name> | <month> <year>
+Iain White has completed <num_training> courses.
+See all training.
+
+Data Fields
+title (course)
+institution
+start-date
+end-date
+
+
+Training
+/training
+Table paged by 10
+Iain White has completed <num_training> courses.
+<title> | <institution_name> | <lecturer> | <month> <year>
+
+See all training.
+
+Data Fields
+title (course)
+image
+description
+institution (Record)
+lecturer (Record)
+start-date
+end-date
+qualification
+
+/training/<institution_name>
+Table paged by 10
+Iain White has completed <num_training> courses at <institution_name>.
+<title> | <lecturer> | <month> <year>
+
+/training/<institution_name>/<title>
+h1 <title>
+
+
+/training/<lecturer>
+Table paged by 10
+Iain White has completed <num_training> courses by <lecturer>.
+<title> | <institution_name> | <month> <year>
+
+
+===
+Menu
+About								/about
+Contact								/contact
+Experience 							/employment
+Work Examples						/work-examples
+Training							/training
+
+Footer Menu
+Menu
+About Iain White					/about
+Contact Iain White					/contact
+Iain White's CV 					/employment
+Iain White's Education 				/education
+
+Iain White Full Stack Developer		/full-stack-developer
+Iain White JavaScript Guru			/javascript-guru
+Iain White database Administrator	/database-administrator
+Iain White DevOps					/devops
+
+Iain White certified Scrum Master	/scrum-master
+Iain White Project Manager			/project-manager
+Iain White Back End Developer		/back-end-developer
+Iain White PHP Developer			/php-developer
+
+
+Static Pages
+/full-stack-developer
+/javascript-guru
+/database-administrator
+/scrum-master						Started
+/project-manager					Done
+/back-end-developer					Done
+/php-developer						Done
+/devops								Done
+/pragmatic-programmer
+/press-and-reviews
+/recommendations
+/volunteer-experience
+/official-secrets-act
+
+
+Iain White Scrum Master
+==========================
+
+I am a certified professional Scrum Master.
+
+I am passionate about Agile software development and I have had plenty of experience working a Scrum Master at OnTheHouse, XVT and Again Faster.
+
+As well as Scrum I am a talented Project Manager with experience of Extreme Programming (XP), Kanban, Prince2, Six Sigma and ITIL.
+
+I have completed <training_count> Scrum / Agile training courses.
+Some Agile related training I have completed recently.
+Last 10 courses.
+<title> | <institution_name> | <month> <year>
+See all my Agile related training.
+
+Iain White Project Manager
+==========================
+
+In many of my possessions I have been called on to undertake Project Management tasks and I worked exclusively as Project Manager at OnTheHouse and XVT.
+
+I am a certified professional Scrum Master and have experience leading Agile software development teams, both inhouse and remotely.
+
+As well as Scrum I am experienced with Prince2, Six Sigma and ITIL.
+
+I have completed <training_count> Project Managment training courses.
+Some Project Management related training I have completed recently.
+Last 10 courses.
+<title> | <institution_name> | <month> <year>
+See all my Project Managment related training.
+
+Iain White Back-End Developer
+=============================
+
+A back-end developer is a type of programmer who creates the logical back-end and core computational logic of a website, software or information system.
+
+I am a strong back-end developer.  I have been creating PHP, ASP, JSP, Python and Perl solutions since XXXX.
+
+I am experienced in a variety of frameworks and Content Management Systems (CMS).
+
+I have worked with a variety of databases including MySQL, PostgreSQL and Microsoft SQL Server.
+
+I have also had experience working with NoSQL, including MongoDB, Amazon DynamoDB, MS Cosmos DB and Couchbase 
+
+For most of my early carrier I would have described myself as a back-end developer, but I have always also developed for the front-end, HTML, CSS and JavaScript.
+
+I now refer to myself as a Full Stack Developer, which is a better description of my skillset.
+
+Iain's Back-End Developer skills:
+PHP, .Net, classic ASP, JSP, Python, Perl, Java, Ruby
+
+I have completed <training_count> back-end related training courses.
+Some back-end related training I have completed recently.
+Last 10 courses.
+<title> | <institution_name> | <month> <year>
+See all my back-end related training. (PHP, .Net, ASP, JSP, Python, Perl, Java, Ruby)
+
+
+Iain White PHP Developer
+========================
+
+I have been developing in PHP for <years> <months>.  I started with PHP 3 back in XXXX and I have used it almost on a daily basis since then.
+
+I would describe myself as a Pragmatic Programer with advanced PHP skills.  I am very hands on and practice my craft as a seasoned professional.
+
+I have developed my own MVC Frameworks and I have used some of the most popular PHP Frameworks, including Laravel, CakePHP, CodeIgniter, Symfony, Yii and the Zend Framework.
+
+In my profesional carrear I have created websites using Drupal and Wordpress.
+
+I have completed <training_count> PHP training courses.
+Last 10 courses.
+Some PHP training I have completed recently.
+<title> | <institution_name> | <month> <year>
+See all my PHP training.
+
+
+Iain White DevOps Engineer
+==========================
+
+DevOps is a set of software development practices that combines software development (Dev) and information technology operations (Ops) to shorten the systems development life cycle while delivering features, fixes, and updates frequently in close alignment with business objectives.
+
+I performed the role of a DevOps Engineer while working at Digital Dealer and Again Faster.
+
+I have had pratical experience with both Amazon Web Services (AWS) and Microsoft Azure Infrastructure, using Cloud Formation and Terraform to provide Infrastructure as Code (IaC).
+
+I am familiar with Continuous Integration, Configuration Management, Deployment Automation, Containers and Source Control.
+
+Although I have had no pratical experience with, I have undertaken training on Google Cloud Platform (GGP) and IBM Cloud Services.
+
+DevOp Skills:
+AWS, Azure, Terraform, Puppet, Chef, Ansible, Jenkins, Bamboo, CircleCI, Vagrant, Docker, Kubernetes, Git, BitBucket
+
+I have completed <training_count> DevOp training courses.
+Some DevOps training I have completed recently.
+Last 10 courses.
+<title> | <institution_name> | <month> <year>
+See all my DevOp training.
+
+===
+Constants
+Started Developing
+Started Web Development
+DOB
+Short-codes
+[age start_date, end_date, format]
+
+===
+Sound Bites
+
+I have been developing in PHP for over <years>.
+I have excellent front-end developing skills including HTML5, CSS-3 and JavaScript.
+I have worked with relational databases for over <years>.
+I have proven team leadership skills.
+I have commercial experience of Test Driven Development (TDD).
+I have worked with code repositories such as SVN and Git.
+I have worked with PHP version 3 through to 7.
+I have have had some experience of FLASH Actionscript.
+I have have had some experience of Java and Java Server Pages (JSP).
+I have worked on several Search Engine Optimisation (SEO) projects.
+I have experience of developing with Perl and CGI.
+I have developed for both the Linux and Windows platforms.
+I have excelent Database Administrator (DBA) skills.
+I am familiar with the Linux Command line.
+I have been a professional ASP Developer.
+I am well versed in the full Software Development Life Cycle (SDLC).
+I have developed with several Google APIs including Google Maps and Google Visualization.
+I have developed in a non-English speaking environment.
+I came to Australia in 2006.
+I am originally from a small village South of Perth in Scotland. I moved to Australia in February 2006.
+I am an Australian citizen and therefore have the right to work in Australia.
+I am a seasoned and versatile PHP Developer based in Brisbane.
+I am a Web Developer with over <years> experience.
+In my career I have developed complex back-end eCommerce systems.
+I developed a website in conjunction with a leading London advertising agency to complement Kia UK's Walking Bus campaign.
+I have worked for big brand names including Honda UK.
+I have worked for big brand names including Kia Cars UK.
+I have worked for big brand names including Proton Cars UK.
+I have worked for big brand names including Coca-Cola Belgium.
+I have worked for big brand names including Nike.
+My website for Proton cars in 2000 won the coveted What Car website of the year award.
+I have been involved in pitching to large companies such as Lotus cars.
+I have worked with Windows 2.
+I have worked with Red Hat.
+While working at Reuters I worked with news feeds in multiple languages including Russian and Chinese.
+Back in the early 90s I worked with pioneering Remote Function Calling (RFC) and text mark-up.
+I remember the IE / Netscape browser wars.
+I have 5 modules in computer studies.
+I have a BSc and diploma in Computing from the Open University.
+I have competent design skills and have used Photoshop and other design software.
+I met Rasmus Lerdorf the creator of PHP in 2007.
+I met Larry Wall the creator of Perl in 2008.
+I have worked for an Internet Service Provider (ISP) in the UK.
+I have worked with Apple Mac OS X Lion.
+I have developed in over 2o programming languages.
+I have lead a Distributed Web Development Team.
+I have lead offshore Software Development Teams.
+I have attended Project status meetings with the NSW Premier while working at XVT Solutions.
+I am a certified Scrum Master.
+I have been called on to do due diligence on a company acquisition.
+I have a HND in Mechanical / Production Engineering.
+
+===
+Plugins
+
+ACF Content Analysis for Yoast SEO
+ACF Photo Gallery Field
+ACF Post-2-Post
+ACF Recent Posts Widget
+Advanced Custom Fields
+Advanced Custom Fields: Extended
+Advanced Custom Fields: Font Awesome
+Advanced Custom Fields: Theme Code
+Checking Variables (Dev. Tool)
+Custom Post Type UI
+Debug Bar - Sidebars & Widgets
+Debug Bar Cron
+Debug Bar Post Meta
+Debug Bar Post Types
+Debug Bar Shortcodes
+Debug Bar Taxonomies
+Debug Bar Widgets
+Debug Media
+Enhanced Media Library
+Query Monitor
+Query Monitor Extend
+Remove Yoast SEO Comments
+Yoast SEO
+
+===
+
+Skills List
+PHP
+MySQL
+PostgreSQL
+JavaScript
+HTML
+CSS
+jQuery
+XML
+ASP
+MS SQLServer
+Drupal
+Perl
+Wordpress
+.Net
+JSP
+ColdFusion
+Python
+Java
+CodeIgniter
+Bash Script
+Database / SQL
+CoffeScript
+R
+Ruby
+Scala
+CakePHP
+Symfony2
+Yii
+Zend
+Laravel
