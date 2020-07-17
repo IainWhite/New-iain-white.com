@@ -1,0 +1,37 @@
+Employment
+/employment
+Table
+<title> (type) at <company_name> (isUK) <start_date> - <end-date> (<years>, <months>)
+<short_description>
+<primary_skills>
+[More]
+
+Employment Page
+/employment/<company_name>
+H1 <title> at <company_name>
+Iain White worked as <title> at <company_name> for <years>, <months> from <start_date> to <end-date>.
+<company_name> website: <company_url>.
+<company_name> on Wikipedia: <company_wikipedia_url>.
+If isUK This position was in <country>.
+This position was / is <type>.
+<company_logo>
+<description>
+<primary_skills> as links
+<other_skills> as links
+
+Position
+
+Data Fields
+title (position name)
+description
+short_description
+company_logo
+company_name
+company_url
+company_wikipedia_url
+country (isUK)
+start_date
+end_date
+type (permanent, contract, freelance)
+primary_skills
+other_skills
