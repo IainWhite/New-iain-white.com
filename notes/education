@@ -1,0 +1,31 @@
+Education
+
+Education Page
+/education
+Iain White has a Bachelor Of Science (BSc) degree and diplomas in computing.
+He is a Professional Scrum Master and a Competent Toastmaster (CTM).
+Iain has completed <count> training courses in management and development skills.
+View Iain's Scrum Master certificate.
+
+Table
+<title> | <institution> | <start-date> - <end-date>
+Professional Scrum Master I | Scrum.org | 2013
+CTM (Communications and Leadership) | Toastmasters International | 2003
+BSc (Computing) | Open University | 1994 - 96
+Diploma in Computing | Open University | 1996
+Programming in C | Brunel Technical College | 1988
+5 SCOTVEC Modules in Computing | Perth College | 1986 - 87
+HND in Mechanical / Production Engineering | Napier University | 1983 - 86
+OND in Engineering | Perth College 1981 - 83
+
+h2 Recent Training
+Table newest 10
+<title> | <institution_name> | <month> <year>
+Iain White has completed <num_training> courses.
+See all training.
+
+Data Fields
+title (course)
+institution
+start-date
+end-date
