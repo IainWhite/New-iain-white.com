@@ -1,0 +1,49 @@
+Book List
+
+Home Page
+Currently reading <title> by <author>.
+Recently finished reading <title> by <author>.
+
+Data Fields
+ISBN
+title
+author (multiple) (first name, surname)
+audio
+read
+own
+reading
+cover
+description
+tags
+description
+date (month year optional)
+
+Library Page
+Title as link to Book page.
+/library
+
+Currently reading <title> by <author>.
+Recently finished reading <title> by <author>.
+
+Books
+Table paged by 10. Only Read. initial order by created date, sortable by title, author surname
+<title> by <author> 
+Link to all books for SEO.
+
+Book Page
+/librar/<title>
+H1 <title>
+H2 <author> link to Author Page
+<cover image>
+<description>
+<ISBN>
+
+Author Page
+Table paged by 10
+/librar/<author>
+Sorted by <title>
+
+Additional
+Filter by <tag>
+Buy on Amazon etc
+
