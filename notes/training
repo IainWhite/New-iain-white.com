@@ -1,0 +1,31 @@
+Training
+/training
+Table paged by 10
+Iain White has completed <num_training> courses.
+<title> | <institution_name> | <lecturer> | <month> <year>
+
+See all training.
+
+Data Fields
+title (course)
+image
+description
+institution (Record)
+lecturer (Record)
+start-date
+end-date
+qualification
+
+/training/<institution_name>
+Table paged by 10
+Iain White has completed <num_training> courses at <institution_name>.
+<title> | <lecturer> | <month> <year>
+
+/training/<institution_name>/<title>
+h1 <title>
+
+
+/training/<lecturer>
+Table paged by 10
+Iain White has completed <num_training> courses by <lecturer>.
+<title> | <institution_name> | <month> <year>
