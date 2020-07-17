@@ -1,1 +1,60 @@
 Skills
+
+Data Fields
+title (name)
+isContinual
+isSoft
+isManager
+isPM
+first_used
+lasted_used
+proficiency (Basic, Intermediate, Proficent, Advanced)
+description
+logo
+
+Skills Page
+Table paged by 10. Order by <proficiency>
+<title> links to Skill Page
+/skills
+<title> | <lasted_used> (current) | <proficiency> as stars.
+Link to all skills for SEO.
+
+Skill Page
+/skills/<title>
+H1 <title>
+Iain White has <proficiency> proficient using <title>, with <years> experience.
+<logo image>
+<description>
+Iain White used <title> when he worked as <companies>.
+
+Skills List
+PHP
+MySQL
+PostgreSQL
+JavaScript
+HTML
+CSS
+jQuery
+XML
+ASP
+MS SQLServer
+Drupal
+Perl
+Wordpress
+.Net
+JSP
+ColdFusion
+Python
+Java
+CodeIgniter
+Bash Script
+Database / SQL
+CoffeScript
+R
+Ruby
+Scala
+CakePHP
+Symfony2
+Yii
+Zend
+Laravel
