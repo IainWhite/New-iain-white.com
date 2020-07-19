@@ -9,6 +9,19 @@ I have developed my own MVC Frameworks and I have used some of the most popular 
 
 In my profesional carrear I have created websites using Drupal and Wordpress.
 
+Iain White PHP Developer
+
+I am a talented and experienced full stack Web Developer with Agile Team Leader experience.
+I have been developing websites for over <?php echo $this->stencil->elapsedYears('01/01/1999'); ?> mostly in PHP, but I have commercial experience of a verity of programming languages and technologies, including ASP (classic and .Net), ColdFusion, JSP, Python and Perl.
+I have worked with a variety of databases including MySQL, PostgreSQL, Microsoft SQLServer and NoSQL solutions including Redis and Sphinx.
+I have worked with both LAMP stack and Windows Servers and I am comfortable using the Linux command line.
+I have performed the roles of Application Architect, Lead Developer and Team Leader.
+I have worked on large and complex web based solutions including eCommerce as well as small brochure type websites.
+I have been trained as a Software Engineer and would consider myself as a Pragmatic Programmer.
+The majority of my work as a PHP Developer has been with MVC Frameworks both custom and third party.
+I have had commercial experience working with Laravel, CodeIgniter, CakePHP, Yii, Symfony2 and the Zend Framework.
+I have worked with several PHP based CMS including WordPress and Drupal.
+
 I have completed <training_count> PHP training courses.
 Last 10 courses.
 Some PHP training I have completed recently.
