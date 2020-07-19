@@ -1,0 +1,17 @@
+Iain White Pragmatic Programmer
+
+I am a big fan of the book The Pragmatic Programmer: From Journeyman to Master by Andrew Hunt and David Thomas.
+When I first read this book I saw a reflection of my few on Software Development and I always have a copy close and recommended it to team mates and managers.
+I often find myself quoting principles such as DRY and No Broken Windows.
+I regard myself as a Pragmatic Programmer.
+
+
+DRY - Don't Repeat Yourself
+Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.
+This will increase your maintenance capabilities and lower bugs proliferation.
+
+No Broken Windows
+
+The concept of Broken Windows come from the criminological theory:
+Consider a building with a few broken windows. If the windows are not repaired, the tendency is for vandals to break a few more windows. Eventually, they may even break into the building, and if it’s unoccupied, perhaps become squatters.
+In software development, broken windows are bad designs, wrong decisions or even poor code. If you don’t fix them as you find them, you’ll end up quickly with software rot.
