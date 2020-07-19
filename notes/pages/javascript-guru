@@ -1,0 +1,12 @@
+Iain White JavaScript Guru	
+
+I am a experienced and talented front-end developer.
+I first started developing in JavaScript in 1999 while working at Reuters.
+I was fascinated by having to script cross-browser for Internet Explorer and Netscape Navigator.
+This lead to me becoming a Web Developer and I have been crafting HTML, CSS and JavaScript solutions for the past <?php echo $this->stencil->elapsedYears('01/01/1999'); ?>.
+I have developed my own cross-browser JavaScript libraries and have worked with Ext, MooTools, Prototype and script.aculo.us but now mostly use jQuery.
+I have done a lot of work with third party APIs including Google Maps and Google Visualisation.
+I have developed Single Page Applications(SPA) and utilised AJAXwhere appropriate.
+I am passionate about front-end development and have staid myself up to date with AngularJS, Ember etc.
+I have have piratical experience developing with HTML5, CSS-3, Foundation Framework and Bootstrap.
+Although not a Web Designer I have basic image processing skill using Photoshop.
