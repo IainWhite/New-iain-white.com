@@ -1,0 +1,99 @@
+Disable Post Revisions
+Open wp-config.php located in your WordPress root directory and add the following code:
+define('AUTOSAVE_INTERVAL', 300 ); // seconds
+define('WP_POST_REVISIONS', false );
+
+Remove current revisions
+DELETE FROM wp_posts WHERE post_type = "revision";
+
+DELETE a,b,c
+FROM wp_posts a
+WHERE a.post_type = 'revision'
+LEFT JOIN wp_term_relationships b
+ON (a.ID = b.object_id)
+LEFT JOIN wp_postmeta c ON (a.ID = c.post_id);
+
+Change your excerpt length
+add_filter('excerpt_length', 'my_excerpt_length');
+function my_excerpt_length($len) { return 75; }
+
+Twitter style “time ago” dates
+Posted <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago';
+
+Estimated reading time
+function reading_time() {
+$content = get_post_field( 'post_content', $post->ID );
+$word_count = str_word_count( strip_tags( $content ) );
+$readingtime = ceil($word_count / 200);
+if ($readingtime == 1) {
+$timer = " minute";
+} else {
+$timer = " minutes";
+}
+$totalreadingtime = $readingtime . $timer;
+return $totalreadingtime;
+}
+
+// show post thumbnails in feeds
+function diw_post_thumbnail_feeds($content) { global $post; if(has_post_thumbnail($post->ID)) {    $content = '<div>' . get_the_post_thumbnail($post->ID) . '</div>' . $content;  } return $content;}add_filter('the_excerpt_rss', 'diw_post_thumbnail_feeds');add_filter('the_content_feed', 'diw_post_thumbnail_feeds');
+
+Redirect to post when search query returns single result
+
+add_action('template_redirect', 'single_result');
+function single_result() {
+  if (is_search()) {
+    global $wp_query;
+    if ($wp_query->post_count == 1) {
+      wp_redirect( get_permalink( $wp_query->posts['0']->ID ) );
+    }
+  }
+}
+
+Automatically create meta description from the_content
+
+function create_meta_desc() {
+  global $post;
+  if (!is_single()) { return; }
+  $meta = strip_tags($post->post_content);
+  $meta = strip_shortcodes($post->post_content);
+  $meta = str_replace(array("\n", "\r", "\t"), ' ', $meta);
+  $meta = substr($meta, 0, 125);
+  echo "<meta name='description' content='$meta' />";
+}
+add_action('wp_head', 'create_meta_desc');
+
+Add “Read More” permalink to the end of the_excerpt
+function excerpt_readmore($more) {
+  return '... <a href="'. get_permalink($post->ID) . '" class="readmore">' . 'Read More' . '</a>';
+}
+add_filter('excerpt_more', 'excerpt_readmore');
+
+Add Odd and Even CSS Classes to WordPress Posts
+ function oddeven_post_class ( $classes ) {
+   global $current_class;
+   $classes[] = $current_class;
+   $current_class = ($current_class == 'odd') ? 'even' : 'odd';
+   return $classes;
+}
+add_filter ( 'post_class' , 'oddeven_post_class' );
+global $current_class;
+$current_class = 'odd';
+
+.even {
+background:#f0f8ff;  
+} 
+.odd {
+ background:#f4f4fb;
+}
+
+Remove Default Image Links in WordPress
+function wpb_imagelink_setup() {
+    $image_set = get_option( 'image_default_link_type' );
+     
+    if ($image_set !== 'none') {
+        update_option('image_default_link_type', 'none');
+    }
+}
+add_action('admin_init', 'wpb_imagelink_setup', 10);
+
+
